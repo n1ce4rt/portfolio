@@ -1,0 +1,21 @@
+.wrapper {
+    width: auto;
+    height: 500px;
+    background: bisque;
+    padding: 50px;
+}
+.container {
+    width: 1200px;
+    /*border: 1px solid black;*/
+    margin: 0 auto;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.jobs {
+    height: 430px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

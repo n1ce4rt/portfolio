@@ -1,0 +1,182 @@
+.about_container {
+    width: 100vw;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo {
+    width: 40%;
+    height: 500px;
+    background: 50% 90% no-repeat;
+    background-size: 100%;
+    -webkit-box-shadow: 20px 20px 15px 5px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 20px 20px 15px 5px rgba(34, 60, 80, 0.2);
+    box-shadow: 20px 20px 15px 5px rgba(34, 60, 80, 0.2);
+    animation: photo_move 10s ease-in-out infinite 1s;
+}
+.data {
+    margin-left: 50px;
+    width: 50%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.data_left {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.data_right {
+    margin-left: 25px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.data_right span {
+    font-weight: bold;
+}
+.data_left p {
+    font-style: italic;
+}
+.learn_more {
+    display: block;
+    color: black;
+    width: 130px;
+    font-style: italic;
+    font-weight: bold;
+    padding: 13px 40px;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(231,231,231,1) 100%);
+    -webkit-box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.35);
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.35);
+    transition: all .3s ease;
+}
+.learn_more span {
+    opacity: 0;
+    transition: all .3s ease;
+}
+.about_container h3  {
+    padding: 0;
+    margin: 0;
+    font-weight: 700;
+    font-size: 22px;
+    color: black;
+}
+.about_container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.about_container li span {
+    display: inline-block;
+    width: 100px;
+    color: #000;
+}
+.learn_more:hover {
+    color: black;
+    cursor: pointer;
+    transform: scale(1.01);
+    letter-spacing: 2px;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 45%, rgba(101,101,101,1) 100%);
+    -webkit-box-shadow: 15px 15px 8px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 15px 15px 8px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 15px 15px 8px 1px rgba(0, 0, 0, 0.2);
+}
+.learn_more:hover span {
+    opacity: 1;
+}
+@keyframes photo_move {
+    0% {
+        background-position: 50% 90%;
+    }
+    50% {
+        background-position: 50% 95%;
+    }
+    100% {
+        background-position: 50% 90%;
+    }
+}
+@media screen and (max-width: 1350px){
+    .photo {
+        height: 450px;
+        background: 10% 75% no-repeat;
+        background-size: 120%;
+    }
+    .data {
+        height: 450px;
+    }
+    .data_right {
+        margin: 0;
+        width: auto;
+    }
+}
+@media screen and (max-width: 1280px ) {
+    .about_container {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .photo {
+        height: 300px;
+        width: 100%;
+        background: 10% 60% no-repeat;
+        background-size: 100%;
+        margin-bottom: 50px;
+    }
+    .data {
+        justify-content: space-between;
+        height: 45%;
+        width: 100%;
+        margin: 0;
+    }
+    @keyframes photo_move {
+        0% {
+            background-position: 10% 60%;
+        }
+        50% {
+            background-position: 10% 65%;
+        }
+        100% {
+            background-position: 10% 60%;
+        }
+    }
+}@media screen and (max-width: 1070px) {
+    .data {
+        flex-direction: column;
+        align-items: start;
+    }
+    .data_right {
+        width: 100%;
+    }
+    .data_left {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 780px){
+    .about_container {
+        justify-content: space-between;
+    }
+    .data_left {
+        height: 50%;
+        justify-content: center;
+    }
+    .data_right {
+        height: 50%;
+    }
+}
+@media screen and (max-width: 650px ){
+    .photo {
+        height: 250px;
+        background-size: 140%;
+    }
+    .data {
+        height: 50%;
+    }
+}
