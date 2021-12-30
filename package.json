@@ -16,7 +16,7 @@
   "homepage": "https://n1ce4rt.github.io/portfolio/",
   "scripts": {
     "predeploy" : "npm run build",
-    "deploy" : "gh-pages -b build",
+    "deploy" : "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
