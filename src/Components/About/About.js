@@ -1,6 +1,5 @@
 import style from './About.module.css'
 import photo from '../../Images/icons/photo.png'
-import avatar from "../../Images/icons/avatar.png";
 export const About =() => {
 
 

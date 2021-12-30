@@ -1,8 +1,8 @@
 import style from './Main.module.css'
 import {Home} from "../Home/Home";
-import {Jobs} from "../MyJobs/Jobs";
 import {Route, Routes} from "react-router-dom";
 import {About} from "../About/About";
+import {Skill} from "../Technologies/Skill/Skill";
 
 export const Main =() => {
     return (
@@ -11,7 +11,8 @@ export const Main =() => {
 
                     <Route path="/home" element={<Home/>}/>
                     <Route path="/about" element={<About/>}/>
-                    <Route path="/#" element={<Home/>}/>
+                    <Route path="/skills" element={<Skill/>}/>
+                    <Route path="/" element={<Home/>}/>
 
                 </Routes>
 

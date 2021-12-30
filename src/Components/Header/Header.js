@@ -76,7 +76,7 @@ export const  Header = () => {
                     <ul className={style.nav_bar}>
                         <li><Link className={style.nav_bar_link} to="home">Home</Link></li>
                         <li><Link className={style.nav_bar_link} to="about">About</Link></li>
-                        <li><Link className={style.nav_bar_link} to="take_me">Skills</Link></li>
+                        <li><Link className={style.nav_bar_link} to="skills">Skills</Link></li>
                         <li><Link className={style.nav_bar_link} to="#">Contacts</Link></li>
                     </ul>
                 </div>
