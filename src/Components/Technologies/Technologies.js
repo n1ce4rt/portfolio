@@ -1,9 +1,9 @@
 import style from './Technologies.module.css'
-import {Skill} from "./Skill/Skill";
+import {Skill} from "../Skills/Skill";
 
-import _react from '../../Images/_react.png'
-import  _redux from '../../Images/_redux.png'
-import  _typescript from '../../Images/_typescript.png'
+import _react from '../../Images/icons/Skills_logo/_react.png'
+import  _redux from '../../Images/icons/Skills_logo/_redux.png'
+import  _typescript from '../../Images/icons/Skills_logo/_typescript.png'
 
 export const Technologies =() => {
 
