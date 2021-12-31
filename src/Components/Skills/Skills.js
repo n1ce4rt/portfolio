@@ -1,10 +1,10 @@
 import style from './Skills.module.css'
 import {Skill} from "./Skill";
-import react_logo from '../../Images/icons/Skills_logo/_react.png'
+import react_logo from '../../Images/icons/Skills_logo/react.svg'
 import html_logo from '../../Images/icons/Skills_logo/html5.svg'
 import css_logo from '../../Images/icons/Skills_logo/css.svg'
 import js_logo from '../../Images/icons/Skills_logo/js.svg'
-import redux_logo from '../../Images/icons/Skills_logo/_redux.png'
+import redux_logo from '../../Images/icons/Skills_logo/redux.svg'
 import typescript_logo from '../../Images/icons/Skills_logo/_typescript.png'
 export const Skills =()=> {
 

@@ -1,49 +1,78 @@
-.wrapper {
-    background: darkolivegreen;
-    width: auto;
-    padding: 50px;
-}
 .container {
-    width: 1200px;
-    height: auto;
+    width: 100%;
+    height: fit-content;
+    /*border: 1px solid black;*/
+}
+.form_wrapper   {
+ margin-bottom: 10px;
+
+}
+.form_wrapper form {
+    width: 50%;
     margin: 0 auto;
-    /*border: 1px solid black;*/
 }
-.form {
-    margin: 50px auto;
-    height: 250px;
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+.form_name,
+.form_email,
+.form_comment {
+    position: relative;
 }
-textarea,
-input {
-    display: block;
-    /*border: 1px solid black;*/
+.form_wrapper label {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: 0.5s;
+}
+.form_comment label {
+    top: 10px;
+}
+input[type = text]:active label {
+    top: 20px;
+}
+input[type = text],
+input[type = email],
+textarea {
+    margin-bottom: 30px;
+    width: 100%;
     background: none;
-    margin: 20px auto;
-    text-align: center;
-    padding: 10px 10px;
+    border: none;
+    border-bottom: 1px solid gray;
     outline: none;
-    width: 225px;
-    transition: 0.5s;
+}
+
+.btn_submit {
+    border: none;
+    display: block;
     color: black;
-    font-size: 14px;
+    width: fit-content;
+    font-style: italic;
+    font-weight: bold;
+    padding: 15px 40px;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(231,231,231,1) 100%);
+    -webkit-box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.35);
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.35);
+    transition: all .3s ease;
 }
-.aaa {
-    width: 100px;
-    height: 35px;
-    background: none;
-    transition: 0.5s;
-}
-.form input:focus,
-.form textarea:focus,
-.aaa:focus{
-    width: 250px;
-    border-color: #61dafb;
-}
-::placeholder {
+.btn_submit:hover {
     color: black;
+    cursor: pointer;
+    transform: scale(1.01);
+    letter-spacing: 2px;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 45%, rgba(101,101,101,1) 100%);
+    -webkit-box-shadow: 15px 15px 8px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 15px 15px 8px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 15px 15px 8px 1px rgba(0, 0, 0, 0.2);
+}
+
+.google_map {
+    width: 50%;
+    height: 50%;
+    margin: 100px auto;
+    filter: grayscale(100);
+}
+.google_map iframe {
+    width: 100%;
+    height: 500px;
 }

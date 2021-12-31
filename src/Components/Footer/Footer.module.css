@@ -4,7 +4,6 @@
     height: 100px;
     display: flex;
     justify-content: center;
-    /*border: 1px solid red;*/
 }
 .footer_contact_bar {
     padding: 0;
@@ -14,12 +13,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*border: 1px solid red;*/
     width: 25%;
 }
 .footer_container li {
-
-    width: 100px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -44,13 +40,14 @@
     color: white;
 }
 
-.footer_contact_bar li:hover img,
-.footer_contact_bar li:hover .text{
+.footer_contact_bar li:hover img {
     transform: translateY(-15px);
     color: #767676;
-
 }
-
+.footer_contact_bar li:hover .text {
+    transform: translateY(-20px);
+    color: #767676;
+}
 
 @media screen and (max-width: 780px){
     .footer_contact_bar {

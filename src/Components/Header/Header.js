@@ -22,8 +22,8 @@ export const  Header = () => {
                         <Link className={style.nav_bar_link} to="home"><li>Home</li></Link>
                         <Link className={style.nav_bar_link} to="about"><li>About</li></Link>
                         <Link className={style.nav_bar_link} to="skills"><li>Skills</li></Link>
-                        <Link className={style.nav_bar_link} to="#"><li>Projects</li></Link>
-                        <Link className={style.nav_bar_link} to="#"><li>Contacts</li></Link>
+                        <Link className={style.nav_bar_link} to="projects"><li>Projects</li></Link>
+                        <Link className={style.nav_bar_link} to="contacts"><li>Contacts</li></Link>
                     </ul>
                 </div>
 
