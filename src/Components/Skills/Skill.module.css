@@ -1,17 +1,16 @@
 .wrapper {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    min-height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
-    margin: 10px ;
+    margin: 20px ;
     padding: 10px;
     transition: 1s;
     background: rgba(255, 255, 255, 0.5);
-    border-bottom: 1px solid gray;
-    border-right: 1px solid gray;
+    border: 1px solid gray;
     filter: grayscale(100%);
 }
 .wrapper:hover {

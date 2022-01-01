@@ -16,7 +16,7 @@ export const Skills =()=> {
             <Skill title={'JS'} logo={js_logo} info={'JavaScript — мультипарадигменный язык программирования.'}/>
             <Skill title={'React'} logo={react_logo} info={'React — JavaScript-библиотека для разработки пользовательских интерфейсов.'}/>
             <Skill title={'Redux'} logo={redux_logo} info={'Redux — библиотека для JavaScript предназначенная для управления состоянием приложения.'}/>
-            <Skill title={'TypeScript'} logo={typescript_logo} info={'TypeScript — язык программирования позиционируемый как средство разработки веб-приложений, расширяющее возможности JavaScript.'}/>
+            <Skill title={'TypeScript'} logo={typescript_logo} info={'TypeScript — язык для разработки веб-приложений, расширяющее возможности JavaScript.'}/>
 
         </div>
     )

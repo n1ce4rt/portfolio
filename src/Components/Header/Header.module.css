@@ -45,7 +45,7 @@
     background: linear-gradient(90deg, rgba(255,255,255,1) 45%, rgba(101,101,101,1) 100%);
     -webkit-box-shadow: 15px 15px 8px 1px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 15px 15px 8px 1px rgba(0, 0, 0, 0.2);
-    box-shadow: 15px 15px 8px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.2);
 }
 .letter {
     position: relative;

@@ -1,8 +1,15 @@
 .skills_container {
     width: 100%;
-
+    height: fit-content;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex-wrap: wrap;
+}
+
+
+@media screen  and (max-width: 2000px){
+    .skills_container {
+        justify-content: center;
+    }
 }
