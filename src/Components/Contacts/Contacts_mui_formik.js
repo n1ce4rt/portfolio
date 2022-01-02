@@ -5,11 +5,7 @@ import { Formik, Form, Field } from 'formik';
 import { TextField } from 'formik-mui';
 import * as React from 'react';
 
-const  Values = {
-    name: '',
-    email: '',
-    text: '',
-}
+const  Values = {}
 
 export const ContactsMuiFormik=() => {
     return (
@@ -55,17 +51,17 @@ export const ContactsMuiFormik=() => {
                     <br />
                     <Field
                         component={TextField}
+                        name="email"
                         type="email"
                         label="Email"
-                        name="email"
                         sx={{ }}
                     />
                     <br />
                     <Field
                         component={TextField}
                         type="text"
-                        label="Some text"
                         name="text"
+                        label="Some text"
                     />
                     {isSubmitting && <LinearProgress />}
                     <br />

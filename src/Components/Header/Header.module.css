@@ -14,12 +14,12 @@
 .nav_container {
     display: flex;
     align-items: center;
-    width: auto;
+    width: fit-content;
 }
 .nav_bar {
     display: flex;
-    justify-content: space-around;
-
+    justify-content: space-between;
+    flex-wrap: wrap;
     list-style: none;
     padding: 0;
     width: 400px;
@@ -89,7 +89,7 @@
 .letter:hover {
     transform: scale(0.63);
 }
-@media screen and (max-width: 780px){
+@media screen and (max-width: 800px){
     .logo_container {
         display: none;
     }
@@ -98,7 +98,7 @@
     }
     .nav_bar {
         justify-content: space-between;
-        width: 250%;
+        width: 100%;
     }
 }
 @media screen and (max-width: 550px){
@@ -106,4 +106,9 @@
         width: 100%;
     }
 
+}
+@media screen and (max-width: 400px){
+    .header_container {
+        width: 100%;
+    }
 }

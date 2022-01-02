@@ -65,7 +65,7 @@
 }
 @media screen and (max-width: 550px){
     .avatar {
-        width: 280px;
-        height: 280px;
+        width: 250px;
+        height: 250px;
     }
 }
