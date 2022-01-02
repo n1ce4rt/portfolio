@@ -6,6 +6,7 @@ import css_logo from '../../Images/icons/Skills_logo/css.svg'
 import js_logo from '../../Images/icons/Skills_logo/js.svg'
 import redux_logo from '../../Images/icons/Skills_logo/redux.svg'
 import typescript_logo from '../../Images/icons/Skills_logo/_typescript.png'
+import github_logo from '../../Images/icons/Skills_logo/github.gif'
 export const Skills =()=> {
 
 
@@ -17,7 +18,7 @@ export const Skills =()=> {
             <Skill title={'React'} logo={react_logo} info={'React — JavaScript-библиотека для разработки пользовательских интерфейсов.'}/>
             <Skill title={'Redux'} logo={redux_logo} info={'Redux — библиотека для JavaScript предназначенная для управления состоянием приложения.'}/>
             <Skill title={'TypeScript'} logo={typescript_logo} info={'TypeScript — язык для разработки веб-приложений, расширяющее возможности JavaScript.'}/>
-
+            <Skill title={'GitHub'} logo={github_logo} info={'GitHub — крупнейший веб-сервис для хостинга IT-проектов и их совместной разработки.'}/>
         </div>
     )
 }

@@ -96,13 +96,13 @@
 }
 @keyframes photo_move {
     0% {
-        background-position: 0 70%;
+        background-position: 0 60%;
     }
     50% {
-        background-position: 0 80%;
+        background-position: 0 70%;
     }
     100% {
-        background-position: 0 70%;
+        background-position: 0 60%;
     }
 }
 @media screen and (max-width: 2000px ) {
@@ -122,19 +122,19 @@
     .photo {
         width: 95%;
         height: 500px;
-        background: 0 75% no-repeat;
+        background: 0 35% no-repeat;
         background-size: 110%;
     }
     .data {
         width: 95%;
-        height: 400px;
+        height: 300px;
         align-items: start;
     }
     .data_left {
-        height: 90%;
+        height: 100%;
     }
     .data_right {
-        align-items: start;
+        align-items: center;
     }
 }
 @media screen and (max-width: 820px ) {
@@ -161,6 +161,7 @@
     }
     .data_left {
         width: 100%;
+        margin-bottom: 10px;
     }
 }
 @media screen and (max-width: 350px ) {
@@ -169,5 +170,9 @@
     }
     .data {
         height: fit-content;
+    }
+    .learn_more {
+        width: 130px;
+        padding: 5px 10px;
     }
 }
