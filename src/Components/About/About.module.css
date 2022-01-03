@@ -16,6 +16,7 @@
     -moz-box-shadow: 20px 20px 15px 5px rgba(34, 60, 80, 0.2);
     box-shadow: 20px 20px 15px 5px rgba(34, 60, 80, 0.2);
     animation: photo_move 15s ease-in-out infinite;
+    transition: 1s;
 }
 .data {
     margin: 10px;
@@ -24,6 +25,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 1s;
 }
 .data_left {
     width: 50%;

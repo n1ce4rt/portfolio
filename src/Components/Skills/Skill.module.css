@@ -16,7 +16,7 @@
 .wrapper:hover {
     transform: scale(1.01);
     cursor: pointer;
-    box-shadow: 15px 15px 10px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 25px 25px 7px 0 rgba(0, 0, 0, 0.2);
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,1) 45%, rgba(101, 101, 101, 0.3) 100%);
     border-bottom: 1px solid black;

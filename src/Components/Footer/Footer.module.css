@@ -4,6 +4,7 @@
     height: 100px;
     display: flex;
     justify-content: center;
+    transition: 1s;
 }
 .footer_contact_bar {
     padding: 0;

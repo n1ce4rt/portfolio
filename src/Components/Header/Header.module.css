@@ -4,6 +4,7 @@
     width: 80%;
     height: 100px;
     margin: 0 auto;
+    transition: 1s;
 }
 .logo_container {
     display: flex;
@@ -94,7 +95,7 @@
         display: none;
     }
     .nav_container {
-        width: 90%;
+        width: 100%;
     }
     .nav_bar {
         justify-content: space-between;
@@ -102,13 +103,11 @@
     }
 }
 @media screen and (max-width: 550px){
+    .header_container {
+        width: 100%;
+    }
     .nav_container {
         width: 100%;
     }
 
-}
-@media screen and (max-width: 400px){
-    .header_container {
-        width: 100%;
-    }
 }

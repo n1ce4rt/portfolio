@@ -5,6 +5,7 @@
     justify-content: start;
     align-items: center;
     flex-wrap: wrap;
+    transition: 1s;
 }
 
 
