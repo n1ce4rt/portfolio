@@ -1,5 +1,5 @@
 
-import style from './Contacts.module.css'
+import style from './Contacts.module.scss'
 import { Button, LinearProgress } from '@mui/material';
 import { Formik, Form, Field } from 'formik';
 import { TextField } from 'formik-mui';
@@ -9,7 +9,7 @@ const  Values = {}
 
 export const ContactsMuiFormik=() => {
     return (
-        <div className={style.container}>
+        <div className={style.contacts_container}>
         <div className={style.google_map}>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1418.6879903621316!2d34.40260175719431!3d44.67109956298198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40eb37af380fc6af%3A0x45abe5f4dab41b5c!2z0YPQuy4g0J7QutGC0Y_QsdGA0YzRgdC60LDRjywgMjgsINCQ0LvRg9GI0YLQsA!5e0!3m2!1sru!2s!4v1640944441754!5m2!1sru!2s"

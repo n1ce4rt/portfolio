@@ -1,4 +1,4 @@
-import style from './Header.module.css'
+import style from './Header.module.scss'
 import { Link } from "react-router-dom";
 
 
