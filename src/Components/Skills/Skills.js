@@ -5,7 +5,8 @@ import html_logo from '../../Images/icons/Skills_logo/html5.svg'
 import css_logo from '../../Images/icons/Skills_logo/css.svg'
 import js_logo from '../../Images/icons/Skills_logo/js.svg'
 import redux_logo from '../../Images/icons/Skills_logo/redux.svg'
-import typescript_logo from '../../Images/icons/Skills_logo/_typescript.png'
+import typescript_logo from '../../Images/icons/Skills_logo/typescript.png'
+
 import github_logo from '../../Images/icons/Skills_logo/github.gif'
 import sass_logo from '../../Images/icons/Skills_logo/sass.svg'
 
