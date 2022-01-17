@@ -79,6 +79,10 @@ export const ContactsMuiFormik=() => {
                             transition: 'all .3s ease',
                             borderRadius: '0',
                             boxShadow: '5px 5px 10px 0 rgba(0, 0, 0, 0.35)',
+                            '@media screen and (max-width: 350px)': {
+                                width: '130px',
+                                padding: '10px 15px',
+                                },
                             '&:hover': {
                                 color: 'black',
                                 cursor: 'pointer',

@@ -1,0 +1,14 @@
+.circle {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #767676;
+  transform: translateY(-50%) translateX(-50%); /* центрируем кружок */
+  z-index: 999; /* чтобы элемент был над остальными элементами */
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: width 0.64s, height 0.64s, border-radius 0.64s, background 0.64s;
+}

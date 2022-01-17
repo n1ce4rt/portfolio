@@ -1,8 +1,15 @@
 import style from './Header.module.scss'
-import { Link } from "react-router-dom";
-
+import { NavLink } from "react-router-dom";
 
 export const  Header = () => {
+
+    const setActive =(isActive) => {
+       return  {
+           color: isActive ? 'black' : '#767676',
+           borderBottom: isActive ? '1px solid black': 'none',
+       }
+    }
+
 
     return (
             <div className={style.header_container}>
@@ -19,14 +26,13 @@ export const  Header = () => {
 
                 <div className={style.nav_container}>
                     <ul className={style.nav_bar}>
-                        <Link className={style.nav_bar_link} to="home"><li>Home</li></Link>
-                        <Link className={style.nav_bar_link} to="about"><li>About</li></Link>
-                        <Link className={style.nav_bar_link} to="skills"><li>Skills</li></Link>
-                        <Link className={style.nav_bar_link} to="projects"><li>Projects</li></Link>
-                        <Link className={style.nav_bar_link} to="contacts"><li>Contacts</li></Link>
+                        <NavLink className={style.nav_bar_link} style={({isActive}) => setActive(isActive)} to="home"><li>Home</li></NavLink>
+                        <NavLink className={style.nav_bar_link} style={({isActive}) => setActive(isActive)} to="about"><li>About</li></NavLink>
+                        <NavLink className={style.nav_bar_link} style={({isActive}) => setActive(isActive)} to="skills"><li>Skills</li></NavLink>
+                        {/*<NavLink className={style.nav_bar_link} style={({isActive}) => setActive(isActive)} to="projects"><li>Projects</li></NavLink>*/}
+                        <NavLink className={style.nav_bar_link} style={({isActive}) => setActive(isActive)} to="contacts"><li>Contacts</li></NavLink>
                     </ul>
                 </div>
-
             </div>
     )
 }

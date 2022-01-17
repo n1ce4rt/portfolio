@@ -1,13 +1,34 @@
 import style from './About.module.scss'
-import photo from '../../Images/icons/photo.png'
+import avatar from '../../Images/icons/avatar.png'
+import photo0 from '../../Images/icons/photo.png'
+import photo1 from '../../Images/icons/photo1.png'
+import photo2 from '../../Images/icons/photo2.png'
+import photo3 from '../../Images/icons/photo3.png'
+import {useState} from "react";
+
 
 export const About = () => {
+
+    const [count, setCount] = useState(0)
+
+    let photoArr = [avatar, photo0, photo1, photo2, photo3]
+
+    const changePhoto =() => {
+        if(count === 4) {
+            setCount(0)
+        } else {
+            setCount(count +1)
+        }
+
+
+        console.log(count)
+    }
 
 
     return (
         <div className={style.about_container}>
 
-            <div className={style.photo} style={{backgroundImage: `url(${photo})`}}>
+            <div className={style.photo} style={{backgroundImage: `url(${photoArr[count]})`}}>
 
             </div>
 
@@ -15,10 +36,10 @@ export const About = () => {
 
                 <div className={style.data_left}>
                     <h3>Arthur Chuikov & Frontend</h3>
-                    <p>Hello, I am a creative photographer based in New York and happy to travel all over Europe to
-                        capture your big day in candid and authentic photos. I will create a lasting memory of the
-                        people.</p>
-                    <a className={style.learn_more}>Learn More<span>   >></span></a>
+                    <p>Hello everyone, I am a beginner front-end developer, currently looking for a job.
+                        I live in the Crimea near the Black Sea.
+                        Active positive guy, in my free time from programming I go in for sports.</p>
+                    <a className={style.learn_more} onClick={()=> changePhoto()}>See More<span>   >></span></a>
                 </div>
 
                 <div className={style.data_right}>
