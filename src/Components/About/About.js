@@ -9,7 +9,7 @@ import {useState} from "react";
 
 export const About = () => {
 
-    const [count, setCount] = useState(0)
+    const [count, setCount] = useState(1)
 
     let photoArr = [avatar, photo0, photo1, photo2, photo3]
 

@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-around;
   width: 80%;
-  height: 100px;
+  height: 10vh;
   margin: 0 auto;
   transition: 1s;
   @media screen and (max-width: 550px) {
@@ -97,7 +97,7 @@
         color: #767676;
 
         li {
-          padding: 3px;
+          padding: 0 5px;
           font-weight: bold;
           align-items: center;
           transition: 0.5s;

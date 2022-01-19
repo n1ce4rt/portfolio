@@ -5,6 +5,7 @@ import {About} from "../About/About";
 import {Skills} from "../Skills/Skills";
 import {Technologies} from "../Technologies/Technologies";
 import {ContactsMuiFormik} from "../Contacts/Contacts_mui_formik";
+import {Error} from "../Error/Error";
 
 export const Main =() => {
     return (
@@ -17,6 +18,7 @@ export const Main =() => {
                     {/*<Route path="/projects" element={<Technologies/>}/>*/}
                     <Route path="/contacts" element={<ContactsMuiFormik/>}/>
                     <Route path="/portfolio" element={<Home/>}/>
+                    <Route path="*" element={<Error/>}/>
 
                 </Routes>
 
