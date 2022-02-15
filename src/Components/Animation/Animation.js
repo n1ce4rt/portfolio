@@ -1,7 +1,4 @@
 
-
-
-
 export const animation = {
     home: {
         hidden: {
@@ -36,20 +33,9 @@ export const animation = {
             transition: {delay: custom * 0.3}
         })
     },
-    skillsTop: {
+    skills: {
         hidden: {
-            y: 400,
-            opacity: 0,
-        },
-        visible: custom => ({
-            y: 0,
-            opacity: 1,
-            transition: {delay: custom * 0.3}
-        })
-    },
-    skillsBottom: {
-        hidden: {
-            y: -400,
+            y: 800,
             opacity: 0,
         },
         visible: custom => ({

@@ -16,57 +16,49 @@ const skills = [
         title: 'HTML',
         logo: html_logo,
         info: 'HTML — стандартизированный язык разметки документов для просмотра веб-страниц в браузере.',
-        custom: 1,
-        variants: animation.skillsTop
+        variants: animation.skills
     },
     {   id: 2,
         title: 'CSS',
         logo: css_logo,
         info: 'CSS — формальный язык описания внешнего вида документа, написанного с использованием языка разметки.',
-        custom: 2,
-        variants: animation.skillsBottom
+        variants: animation.skills
     },
     {   id: 3,
         title: 'JS',
         logo: js_logo,
         info: 'JavaScript — мультипарадигменный язык программирования.',
-        custom: 1,
-        variants: animation.skillsTop
+        variants: animation.skills
     },
     {   id: 4,
         title: 'React',
         logo: react_logo,
         info: 'React — JavaScript-библиотека для разработки пользовательских интерфейсов.',
-        custom: 2,
-        variants: animation.skillsBottom
+        variants: animation.skills
     },
     {   id: 5,
         title: 'Redux',
         logo: redux_logo,
         info: 'Redux — библиотека для JavaScript предназначенная для управления состоянием приложения.',
-        custom: 2,
-        variants: animation.skillsTop
+        variants: animation.skills
     },
     {   id: 6,
         title: 'TypeScript',
         logo: typescript_logo,
         info: 'TypeScript — язык для разработки веб-приложений, расширяющее возможности JavaScript.',
-        custom: 1,
-        variants: animation.skillsBottom
+        variants: animation.skills
     },
     {   id: 7,
         title: 'GitHub',
         logo: github_logo,
         info: 'GitHub — крупнейший веб-сервис для хостинга IT-проектов и их совместной разработки.',
-        custom: 2,
-        variants: animation.skillsTop
+        variants: animation.skills
     },
     {   id: 8,
         title: 'Sass',
         logo: sass_logo,
         info: 'Sass — это метаязык, предназначенный для увеличения уровня абстракции CSS-кода и упрощения файлов каскадных таблиц стилей.',
-        custom: 1,
-        variants: animation.skillsBottom
+        variants: animation.skills
     },
 ]
 export const Skills =() => {
@@ -79,8 +71,8 @@ export const Skills =() => {
              viewport={{once: true}}
             >
             {
-                skills.map((e) => {
-                    return <MSkill key={e.id} custom={e.custom} variants={e.variants} title={e.title} logo={e.logo} info={e.info}/>
+                skills.map((e, index) => {
+                    return <MSkill key={e.id} custom={index + 1} variants={e.variants} title={e.title} logo={e.logo} info={e.info}/>
                 })
             }
 
