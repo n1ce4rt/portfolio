@@ -96,21 +96,24 @@
         font-size: 15px;
         color: #767676;
 
+
         li {
           padding: 0 5px;
           font-weight: bold;
           align-items: center;
           transition: 0.5s;
           border-radius: 1px;
+          cursor: pointer;
 
           &:hover {
             color: black;
             transform: scale(1.01);
-            background: rgb(255, 255, 255);
-            background: linear-gradient(90deg, rgba(255, 255, 255, 1) 45%, rgba(101, 101, 101, 1) 100%);
+            //background: rgb(255, 255, 255);
+            //background: linear-gradient(90deg, rgba(255, 255, 255, 1) 45%, rgba(101, 101, 101, 1) 100%);
             -webkit-box-shadow: 15px 15px 8px 1px rgba(0, 0, 0, 0.2);
             -moz-box-shadow: 15px 15px 8px 1px rgba(0, 0, 0, 0.2);
             box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
           }
         }
       }

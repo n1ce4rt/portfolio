@@ -5,6 +5,8 @@ import photo1 from '../../Images/icons/photo1.png'
 import photo2 from '../../Images/icons/photo2.png'
 import photo3 from '../../Images/icons/photo3.png'
 import {useState} from "react";
+import { motion } from "framer-motion";
+import {animation} from "../Animation/Animation";
 
 
 export const About = () => {
@@ -26,7 +28,11 @@ export const About = () => {
 
 
     return (
-        <div className={style.about_container}>
+        <motion.div className={style.about_container}
+                    initial='hidden'
+                    whileInView='visible'
+                    viewport={{once: true}}
+        >
 
             <div className={style.photo} style={{backgroundImage: `url(${photoArr[count]})`}}>
 
@@ -34,15 +40,15 @@ export const About = () => {
 
             <div className={style.data}>
 
-                <div className={style.data_left}>
+                <motion.div className={style.data_left} custom={1} variants={animation.aboutLeft}>
                     <h3>Arthur Chuikov & Frontend</h3>
                     <p>Hello everyone, I am a beginner front-end developer, currently looking for a job.
                         I live in the Crimea near the Black Sea.
                         Active positive guy, in my free time from programming I go in for sports.</p>
                     <a className={style.learn_more} onClick={()=> changePhoto()}>See More<span>   >></span></a>
-                </div>
+                </motion.div>
 
-                <div className={style.data_right}>
+                <motion.div className={style.data_right} custom={2} variants={animation.aboutRight}>
                     <ul className={style.data_info}>
                         <li><p><span>Birthday:</span>29.06.1994</p></li>
                         <li><p><span>Age:</span>27</p></li>
@@ -52,11 +58,11 @@ export const About = () => {
                         <li><p><span>Study:</span>None</p></li>
                         <li><p><span>Freelance:</span>Available</p></li>
                     </ul>
-                </div>
+                </motion.div>
 
             </div>
 
-        </div>
+        </motion.div>
     )
 }
 
