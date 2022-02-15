@@ -20,6 +20,14 @@ PERFORMANCE OF THIS SOFTWARE.
 ***************************************************************************** */
 
 /**
+ * A better abstraction over CSS.
+ *
+ * @copyright Oleg Isonen (Slobodskoi) / Isonen 2014-present
+ * @website https://github.com/cssinjs/jss
+ * @license MIT
+ */
+
+/**
  * React Router DOM v6.2.1
  *
  * Copyright (c) Remix Software Inc.
@@ -39,12 +47,6 @@ PERFORMANCE OF THIS SOFTWARE.
  * LICENSE.md file in the root directory of this source tree.
  *
  * @license MIT
- */
-
-/** @license MUI v5.2.6
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
  */
 
 /** @license React v0.20.2
@@ -67,15 +69,6 @@ PERFORMANCE OF THIS SOFTWARE.
 
 /** @license React v17.0.2
  * react-dom.production.min.js
- *
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-/** @license React v17.0.2
- * react-is.production.min.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
