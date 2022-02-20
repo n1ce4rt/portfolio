@@ -5,28 +5,23 @@ import photo1 from '../../Images/icons/photo1.png'
 import photo2 from '../../Images/icons/photo2.png'
 import photo3 from '../../Images/icons/photo3.png'
 import {useState} from "react";
-import { motion } from "framer-motion";
+import {motion} from "framer-motion";
 import {animation} from "../Animation/Animation";
 
+export const photoArr = [avatar, photo0, photo1, photo2, photo3]
 
 export const About = () => {
 
     const [count, setCount] = useState(1)
 
-    let photoArr = [avatar, photo0, photo1, photo2, photo3]
-
-    const changePhoto =() => {
-        if(count === 4) {
+    const changePhoto = () => {
+        if (count === 4) {
             setCount(0)
         } else {
-            setCount(count +1)
+            setCount(count + 1)
         }
-
-
-        console.log(count)
     }
-
-
+    
     return (
         <motion.div className={style.about_container}
                     initial='hidden'
@@ -45,7 +40,7 @@ export const About = () => {
                     <p>Hello everyone, I am a beginner front-end developer, currently looking for a job.
                         I live in the Crimea near the Black Sea.
                         Active positive guy, in my free time from programming I go in for sports.</p>
-                    <a className={style.learn_more} onClick={()=> changePhoto()}>See More<span>   >></span></a>
+                    <a className={style.learn_more} onClick={() => changePhoto()}>See More<span>   >></span></a>
                 </motion.div>
 
                 <motion.div className={style.data_right} custom={2} variants={animation.aboutRight}>
