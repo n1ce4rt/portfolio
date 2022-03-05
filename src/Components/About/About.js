@@ -10,7 +10,7 @@ import {animation} from "../Animation/Animation";
 
 export const photoArr = [avatar, photo0, photo1, photo2, photo3]
 
-export const About = () => {
+export const About = ({theme}) => {
 
     const [count, setCount] = useState(1)
 
@@ -40,7 +40,7 @@ export const About = () => {
                     <p>Hello everyone, I am a beginner front-end developer, currently looking for a job.
                         I live in the Crimea near the Black Sea.
                         Active positive guy, in my free time from programming I go in for sports.</p>
-                    <a className={style.learn_more} onClick={() => changePhoto()}>See More<span>   >></span></a>
+                    <a className={style.learn_more} style={{color: theme? '#9e8d77' : '#000'}} onClick={() => changePhoto()}>See More<span>   >></span></a>
                 </motion.div>
 
                 <motion.div className={style.data_right} custom={2} variants={animation.aboutRight}>

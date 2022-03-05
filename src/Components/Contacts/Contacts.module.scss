@@ -9,8 +9,8 @@
   }
 
   .google_map {
-    width: 50%;
-    height: 50%;
+    width: 1000px;
+    height: 100%;
     margin: 25px auto;
     filter: grayscale(100);
     transition: 1s;
@@ -42,6 +42,8 @@
   .add {
     display: flex;
     flex-direction: column;
+    padding: 3px;
+    border-radius: 3px;
     width: 50%;
     margin: 25px auto;
     transition: 1s;

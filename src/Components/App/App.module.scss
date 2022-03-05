@@ -1,0 +1,20 @@
+@import "src/Components/Styles/Variables";
+
+.app_light {
+    background: $Light-background-color;
+    color: $Light-text-color;
+
+    a {
+        color: $Dark-small-text-color;
+    }
+}
+
+
+.app_dark {
+    background: $Dark-background-color;
+    color: $Dark-text-color;
+
+    a {
+        color: $Light-small-text-color;
+    }
+}

@@ -1,4 +1,4 @@
-.main_container {
+.main_container_light {
   margin: 10px auto;
   width: 80%;
   min-height: 80vh;
@@ -6,7 +6,24 @@
   align-items: center;
   background: rgb(255, 255, 255);
   background: linear-gradient(90deg, rgba(255, 255, 255, 1) 25%, rgba(231, 231, 231, 1) 100%);
-  transition: 1s;
+  transition: 0.5s;
+  @media screen and (max-width: 550px) {
+    width: 100%;
+  }
+
+}
+.main_container_dark {
+  filter: brightness(0.8);
+  margin: 10px auto;
+  width: 80%;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  background: #080808;
+  //background: -webkit-linear-gradient(to right, #000000 , #434343);
+  background: linear-gradient(to right, rgba(31, 27, 23, 0), #080808);
+  color: #9e8d77;
+  transition: 0.5s;
   @media screen and (max-width: 550px) {
     width: 100%;
   }
