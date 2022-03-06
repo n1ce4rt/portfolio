@@ -10,8 +10,8 @@ export const Skill = forwardRef(( {title, logo, info, color, theme}, ref ) => {
             border: theme ? ` 1px solid ${color}` : ' 1px solid grey',
         }}>
             <img src={logo} alt={title} width={100} height={100}></img>
-            <h1 style={{color: theme? '#9e8d77' : '#000'}}>{title}</h1>
-            <p style={{color: theme? '#9e8d77' : '#000'}}>{info}</p>
+            <h1 style={{color: theme? 'gray' : '#000'}}>{title}</h1>
+            <p style={{color: theme? 'gray' : '#000'}}>{info}</p>
         </div>
     )
 })

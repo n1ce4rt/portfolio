@@ -1,7 +1,7 @@
 import style from './Skills.module.scss'
 import {MSkill} from "./Skill";
 import {motion} from "framer-motion";
-import {skills} from './logo'
+import {skills} from '../Store/Store_logo'
 
 
 export const Skills = ({theme}) => {

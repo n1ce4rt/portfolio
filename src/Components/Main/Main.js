@@ -2,7 +2,7 @@ import style from './Main.module.scss'
 import {Home} from "../Home/Home";
 import {Route, Routes} from "react-router-dom";
 import {About} from "../About/About";
-import {Skills} from "../../Images/icons/Skills/Skills";
+import {Skills} from "../Skills/Skills";
 import {ContactsMuiFormik} from "../Contacts/Contacts_mui_formik";
 import {Error} from "../Error/Error";
 import {Some} from "../Some/Some";

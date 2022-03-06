@@ -1,13 +1,14 @@
-import react_logo from '../Skills_logo/react.svg'
-import html_logo from '../Skills_logo/html5.svg'
-import css_logo from '../Skills_logo/css.svg'
-import js_logo from '../Skills_logo/js.svg'
-import redux_logo from '../Skills_logo/redux.svg'
-import typescript_logo from '../Skills_logo/typescript.png'
-import github_logo from '../Skills_logo/ghw.png'
-import github_logo_black from '../Skills_logo/ghb.png'
-import sass_logo from '../Skills_logo/sass.svg'
-import {animation} from "../../../Components/Animation/Animation";
+import react_logo from '../../Images/icons/Skills_logo/react.svg'
+import html_logo from '../../Images/icons/Skills_logo/html5.svg'
+import css_logo from '../../Images/icons/Skills_logo/css.svg'
+import js_logo from '../../Images/icons/Skills_logo/js.svg'
+import redux_logo from '../../Images/icons/Skills_logo/redux.svg'
+import typescript_logo from '../../Images/icons/Skills_logo/typescript.png'
+import github_logo from '../../Images/icons/Skills_logo/ghw.png'
+import github_logo_black from '../../Images/icons/Skills_logo/ghb.png'
+import sass_logo from '../../Images/icons/Skills_logo/sass.svg'
+import mui_logo from '../../Images/icons/Skills_logo/mui.svg'
+import {animation} from "../Animation/Animation";
 
 export const skills = [
     {   id: 1,
@@ -26,7 +27,7 @@ export const skills = [
         info: 'CSS — формальный язык описания внешнего вида документа, написанного с использованием языка разметки.',
         variants: animation.skills
     },
-    {   id: 8,
+    {   id: 3,
         title: 'Sass',
         color: '#f06292',
         logoW: sass_logo,
@@ -34,7 +35,7 @@ export const skills = [
         info: 'Sass — это метаязык, предназначенный для увеличения уровня абстракции CSS-кода и упрощения файлов каскадных таблиц стилей.',
         variants: animation.skills
     },
-    {   id: 3,
+    {   id: 4,
         title: 'JS',
         color: 'rgba(255,214,0,0.75)',
         logoW: js_logo,
@@ -42,7 +43,7 @@ export const skills = [
         info: 'JavaScript — мультипарадигменный язык программирования.',
         variants: animation.skills
     },
-    {   id: 4,
+    {   id: 5,
         title: 'React',
         color: '#3397d9',
         logoW: react_logo,
@@ -50,7 +51,7 @@ export const skills = [
         info: 'React — JavaScript-библиотека для разработки пользовательских интерфейсов.',
         variants: animation.skills
     },
-    {   id: 5,
+    {   id: 6,
         title: 'Redux',
         color: '#7e57c2',
         logoW: redux_logo,
@@ -58,7 +59,7 @@ export const skills = [
         info: 'Redux — библиотека для JavaScript предназначенная для управления состоянием приложения.',
         variants: animation.skills
     },
-    {   id: 6,
+    {   id: 7,
         title: 'TypeScript',
         color: '#2d79c7',
         logoW: typescript_logo,
@@ -66,12 +67,20 @@ export const skills = [
         info: 'TypeScript — язык для разработки веб-приложений, расширяющее возможности JavaScript.',
         variants: animation.skills
     },
-    {   id: 7,
+    {   id: 8,
         title: 'GitHub',
-        color: 'rgba(255,255,255,0.75)',
+        color: '#9e8d77',
         logoW: github_logo,
         logoB: github_logo_black,
         info: 'GitHub — крупнейший веб-сервис для хостинга IT-проектов и их совместной разработки.',
+        variants: animation.skills
+    },
+    {   id: 9,
+        title: 'MUI',
+        color: '#007fff',
+        logoW: mui_logo,
+        logoB: mui_logo,
+        info: 'Material Design — стиль графического дизайна интерфейсов программного обеспечения и приложений.',
         variants: animation.skills
     },
 ]

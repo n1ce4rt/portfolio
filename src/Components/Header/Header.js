@@ -14,7 +14,7 @@ export const Header = ({callback, theme}) => {
         <section className={style.header_container}>
 
 
-            <div className={style.logo_container} style={{color: theme? '#9e8d77' : 'white'}}>
+            <div className={style.logo_container} style={{color: theme? 'gray' : 'white'}}>
                 <span className={style.letter}><i>n</i></span>
                 <span className={style.letter}><i>i</i></span>
                 <span className={style.letter}><i>c</i></span>
@@ -46,7 +46,7 @@ const Link = ({item, isSelected, handlerClick, theme}) => {
         <motion.div
             onClick={handlerClick}>
             <NavLink key={item} className={style.nav_bar_link} to={item}>
-                <li style={{color: theme? '#9e8d77' : '#000'}}>
+                <li style={{color: theme? 'gray' : '#000'}}>
                     {item}
                     {isSelected && <ActiveLine theme={theme}/>}
                 </li>
@@ -61,7 +61,7 @@ const ActiveLine = ({theme}) => {
             style={{
                 width: '100%',
                 height: '2px',
-                background: (theme? '#9e8d77' : '#000' ),
+                background: (theme? 'gray' : '#000' ),
                 borderRadius: '50px',
             }}>
         </motion.div>

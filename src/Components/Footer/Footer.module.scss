@@ -31,12 +31,13 @@
       height: 100%;
       width: 30%;
 
-      img {
+      svg  {
         transition: 0.5s;
         transform: translateY(19px);
       }
 
-      &:hover img {
+      &:hover img,
+      &:hover svg , {
         transform: translateY(-15px);
         //color: #767676;
       }

@@ -3,7 +3,6 @@ import style from './App.module.scss'
 import {Footer} from "../Footer/Footer";
 import {Main} from "../Main/Main";
 import { useEffect, useState} from "react";
-import {Theme} from "../Theme/Theme";
 
 function App() {
 
