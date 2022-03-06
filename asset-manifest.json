@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.ca9b1b7f.css",
-    "main.js": "/portfolio/static/js/main.f0c20297.js",
+    "main.css": "/portfolio/static/css/main.c88657a0.css",
+    "main.js": "/portfolio/static/js/main.9ba3ac04.js",
     "static/js/787.9b9c0edf.chunk.js": "/portfolio/static/js/787.9b9c0edf.chunk.js",
     "static/media/avatar.png": "/portfolio/static/media/avatar.b78dc0c435e84b73a699.png",
     "static/media/photo.png": "/portfolio/static/media/photo.d9c3c924aa1e8531d369.png",
@@ -15,16 +15,17 @@
     "static/media/redux.svg": "/portfolio/static/media/redux.c5ef0cbd5c88c3f96af34f240c381f5c.svg",
     "static/media/css.svg": "/portfolio/static/media/css.756abdec313e518b328c26dd723ee338.svg",
     "static/media/vk.svg": "/portfolio/static/media/vk.e7a6698fc03571e86e898d9dee4a24ac.svg",
-    "static/media/telegram.svg": "/portfolio/static/media/telegram.96fa9822f941057d6d82c4cf90998a83.svg",
+    "static/media/telegram.svg": "/portfolio/static/media/telegram.c3d31df5020da1639a535268d72500aa.svg",
+    "static/media/mui.svg": "/portfolio/static/media/mui.765c1c8748dccca2b21168f34c22ca90.svg",
     "static/media/js.svg": "/portfolio/static/media/js.2c4ec503447402632078448b9a2fc3c5.svg",
-    "static/media/instagram.svg": "/portfolio/static/media/instagram.ba6093db59009ae9ad3b5174e548be77.svg",
+    "static/media/instagram.svg": "/portfolio/static/media/instagram.c329ae4d5fb80d4ec8a1eba8fce295b2.svg",
     "index.html": "/portfolio/index.html",
-    "main.ca9b1b7f.css.map": "/portfolio/static/css/main.ca9b1b7f.css.map",
-    "main.f0c20297.js.map": "/portfolio/static/js/main.f0c20297.js.map",
+    "main.c88657a0.css.map": "/portfolio/static/css/main.c88657a0.css.map",
+    "main.9ba3ac04.js.map": "/portfolio/static/js/main.9ba3ac04.js.map",
     "787.9b9c0edf.chunk.js.map": "/portfolio/static/js/787.9b9c0edf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ca9b1b7f.css",
-    "static/js/main.f0c20297.js"
+    "static/css/main.c88657a0.css",
+    "static/js/main.9ba3ac04.js"
   ]
 }
