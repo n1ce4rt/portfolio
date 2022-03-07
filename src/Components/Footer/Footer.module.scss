@@ -28,8 +28,9 @@
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
-      height: 100%;
-      width: 30%;
+      min-height: 75.7px;
+      min-width: 75.7px;
+      border-radius: 50%;
 
       svg  {
         transition: 0.5s;
@@ -38,8 +39,7 @@
 
       &:hover img,
       &:hover svg , {
-        transform: translateY(-15px);
-        //color: #767676;
+        transform: translateY(-17px);
       }
 
       a {
@@ -47,7 +47,6 @@
         font-family: 'Poppins', sans-serif;
         font-weight: 500;
         font-size: 15px;
-        //color: white;
         transition: 0.5s;
         display: block;
         opacity: 0;
@@ -56,7 +55,6 @@
       &:hover a {
         transform: translateY(-20px);
         opacity: 1;
-        //color: #767676;
       }
 
     }

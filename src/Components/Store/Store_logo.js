@@ -8,6 +8,8 @@ import github_logo from '../../Images/icons/Skills_logo/ghw.png'
 import github_logo_black from '../../Images/icons/Skills_logo/ghb.png'
 import sass_logo from '../../Images/icons/Skills_logo/sass.svg'
 import mui_logo from '../../Images/icons/Skills_logo/mui.svg'
+import rest_black_logo from '../../Images/icons/Skills_logo/rest_b.svg'
+import rest_logo from '../../Images/icons/Skills_logo/rest_w.svg'
 import {animation} from "../Animation/Animation";
 
 export const skills = [
@@ -32,7 +34,7 @@ export const skills = [
         color: '#f06292',
         logoW: sass_logo,
         logoB: sass_logo,
-        info: 'Sass — это метаязык, предназначенный для увеличения уровня абстракции CSS-кода и упрощения файлов каскадных таблиц стилей.',
+        info: 'Sass — метаязык, предназначенный для увеличения уровня абстракции CSS-кода и упрощения файлов каскадных таблиц стилей.',
         variants: animation.skills
     },
     {   id: 4,
@@ -69,7 +71,7 @@ export const skills = [
     },
     {   id: 8,
         title: 'GitHub',
-        color: '#9e8d77',
+        color: 'gray',
         logoW: github_logo,
         logoB: github_logo_black,
         info: 'GitHub — крупнейший веб-сервис для хостинга IT-проектов и их совместной разработки.',
@@ -81,6 +83,14 @@ export const skills = [
         logoW: mui_logo,
         logoB: mui_logo,
         info: 'Material Design — стиль графического дизайна интерфейсов программного обеспечения и приложений.',
+        variants: animation.skills
+    },
+    {   id: 10,
+        title: 'REST',
+        color: 'gray',
+        logoW: rest_logo,
+        logoB: rest_black_logo,
+        info: 'REST — архитектурный стиль взаимодействия компонентов распределённого приложения в сети.',
         variants: animation.skills
     },
 ]
