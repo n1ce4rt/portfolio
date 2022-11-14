@@ -1,5 +1,5 @@
 import style from './Home.module.scss'
-import avatar from '../../Images/icons/avatar.png'
+import avatar from '../../Images/icons/avatar.jpg'
 import {motion} from 'framer-motion'
 import {animation} from "../Animation/Animation";
 
@@ -15,7 +15,7 @@ export const Home = () => {
 
 
             <div>
-                <div className={style.avatar} style={{backgroundImage: `url(${avatar})`}}></div>
+                <div className={style.avatar} style={{backgroundImage: `url(${avatar})` }}></div>
             </div>
 
             <div className={style.about_me}>
