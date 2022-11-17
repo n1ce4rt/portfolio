@@ -28,6 +28,8 @@
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "lint": "eslint -c .eslintrc --ext .ts,.js,.tsx .",
+    "lint:fix": "npm run lint -- --fix",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
