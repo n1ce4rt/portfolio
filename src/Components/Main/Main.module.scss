@@ -1,5 +1,6 @@
 .main_container_light {
   margin: 10px auto;
+  min-height: 80vh;
   width: 80%;
   display: flex;
   align-items: center;
@@ -15,6 +16,7 @@
 .main_container_dark {
   filter: brightness(0.8);
   margin: 10px auto;
+  min-height: 80vh;
   width: 80%;
   display: flex;
   align-items: center;
