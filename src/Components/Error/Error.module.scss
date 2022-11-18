@@ -16,10 +16,10 @@
     margin: 50px;
     display: block;
     //color: black;
-    width: 130px;
+    width: fit-content;
     font-style: italic;
     font-weight: bold;
-    padding: 13px 40px;
+    padding: 10px 40px;
     background: rgb(255, 255, 255);
     background: linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(231, 231, 231, 1) 100%);
     -webkit-box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.35);
@@ -27,7 +27,7 @@
     box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.35);
     transition: all .3s ease;
     @media screen and (max-width: 350px) {
-      width: 130px;
+      width: fit-content;
       padding: 5px 10px;
     }
     &:hover {

@@ -14,7 +14,7 @@ export const Home = () => {
       className={style.home_container}>
 
 
-      <div>
+      <div className={style.avatar_wrapper}>
         <div className={style.avatar} style={{backgroundImage: `url(${avatar})` }}></div>
       </div>
 

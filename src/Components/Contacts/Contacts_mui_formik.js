@@ -71,7 +71,7 @@ export const ContactsMuiFormik = ({theme}) => {
       </motion.div>
 
       <motion.div custom={1} variants={animation.contacts}>
-        <form onSubmit={formik.handleSubmit} className={style.add}
+        <form onSubmit={formik.handleSubmit} className={style.form_add}
           style={{background: theme ? 'rgba(255,255,255,0.9)' : 'rgba(0,0,0,0)'}}>
           <TextField
             style={{
@@ -116,30 +116,35 @@ export const ContactsMuiFormik = ({theme}) => {
             helperText={formik.touched.text && formik.errors.text}
           />
           <Button
-            style={{
-              width: '150px',
-              padding: '15px 40px',
-              color: 'black',
-              background: 'linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(231, 231, 231, 1) 100%)',
-              margin: '0 auto',
-              transition: 'all .3s ease',
+            sx={{
+              textDecoration: 'none',
               borderRadius: '0',
+              alignSelf: 'center',
+              display: 'block',
+              color: 'black',
+              width: '150px',
+              fontFamily: 'Poppins, sans-serif',
+              fonteight: 'bold',
+              padding: '10px 30px',
+              background: 'rgb(255, 255, 255)',
+              backgroundImage: 'linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(231, 231, 231, 1) 100%)',
+              // -webkit-box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.35)',
+              // -moz-box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.35)',
               boxShadow: '5px 5px 10px 0 rgba(0, 0, 0, 0.35)',
-
+              transition: 'all .3s ease',
+              '@media screen and (max-width: 350px)' : {
+                width: '100px',
+                padding: '5px 10px',
+              },
               '&:hover': {
-                color: 'black',
-                // cursor: 'pointer',
-                transform: 'scale(1.01)',
-                background: 'linear-gradient(90deg, rgba(255, 255, 255, 1) 45%, rgba(101, 101, 101, 1) 100%)',
-                boxShadow: '15px 15px 8px 1px rgba(0, 0, 0, 0.35)',
-              },
-              '@media screen and (max-width: 350px)': {
-                width: '130px',
-                padding: '10px 15px',
-              },
-              '&:active': {
-                backgroundColor: 'rgb(15,218,56)',
-              },
+                cursor: 'pointer',
+                transform: 'scale(1.001)',
+                background: 'rgb(255, 255, 255)',
+                backgroundImage: 'linear-gradient(90deg, rgba(255, 255, 255, 1) 45%, rgba(101, 101, 101, 1) 100%)',
+                // -webkit-box-shadow: 15px 15px 8px 1px rgba(0, 0, 0, 0.2);
+                // -moz-box-shadow: 15px 15px 8px 1px rgba(0, 0, 0, 0.2);
+                boxShadow: '10px 10px 5px 1px rgba(0, 0, 0, 0.2)',
+              }
             }}
             color="primary" variant="contained" type="submit">
                         Submit

@@ -1,43 +1,34 @@
-import {motion} from 'framer-motion';
-import {useEffect, useRef, useState} from 'react';
-import style from './Some.module.scss';
-// import {photoArr} from "../About/About";
+
+
 
 export const Some = () => {
 
 
-  const [width, setWidth] = useState(0);
-  const slider = useRef();
+  // function makeCouter () {
+  //   var count = 1;
+  //   return function () { return count++; };
+  // }
+  // function makeCouter (count) {
+  //   return function () { return count++; };
+  // }
 
-  useEffect(() => {
+  // var firstCounter = makeCouter(4);
+  // var secondCounter = makeCouter(8);
 
-    console.log(slider.current.scrollWidth, slider.current.offsetWidth);
-    setWidth(slider.current.scrollWidth - slider.current.offsetWidth);
 
-  },[]);
+  // console.log(firstCounter(), firstCounter());
+  // console.log(secondCounter(), secondCounter());
+
+  // let message =  {
+  //   message: 'bye',
+  // }
+
+ 
+  
   return (
-    <section className={style.some_container}>
 
+    <>
+    </>
 
-
-      <motion.div className={style.slider_wrapper} ref={slider}>
-        <motion.div
-          className={style.inner_slider}
-          drag="x"
-          dragConstraints={{right: -15, left: -width}}>
-          {
-            // photoArr.map((photo, index) => {
-            //     return (
-            //         <motion.div className={style.item} key={index}>
-            //             {/* <img src={photo} alt={'photo'}/> */}
-            //         </motion.div>
-            //     )
-            // })
-          }
-        </motion.div>
-      </motion.div>
-
-
-    </section>
   );
 };

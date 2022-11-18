@@ -39,11 +39,10 @@
     }
   }
 
-  .add {
+  .form_add {
     display: flex;
     flex-direction: column;
-    padding: 3px;
-    border-radius: 3px;
+    margin: 5px;
     width: 50%;
     margin: 25px auto;
     transition: 1s;

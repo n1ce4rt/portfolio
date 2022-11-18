@@ -18,7 +18,7 @@
     @media screen and (max-width: 1550px) {
       width: 50%;
     }
-    @media screen and (max-width: 550px) {
+    @media screen and (max-width: 605px) {
       width: 100%;
     }
   
@@ -34,12 +34,15 @@
 
       svg  {
         transition: 0.5s;
-        transform: translateY(19px);
+        transform: translateY(20px);
       }
 
       &:hover img,
       &:hover svg  {
-        transform: translateY(-17px);
+        transform: translateY(-15px);
+        @media screen and (max-width: 550px) {
+          transform: translateY(50px);
+        }
       }
 
       a {
@@ -55,7 +58,11 @@
       &:hover a {
         transform: translateY(-20px);
         opacity: 1;
+        @media screen and (max-width: 550px) {
+          transform: translateY(-30px);
+        }
       }
+      
 
     }
   }

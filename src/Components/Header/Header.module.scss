@@ -6,12 +6,13 @@
   margin: 0 auto;
   transition: 1s;
   position: relative;
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 605px) {
     height: 50px;
     width: 100%;
   }
 
   .logo_container {
+    z-index: 100;
     display: flex;
     justify-content: center;
     align-items: center;

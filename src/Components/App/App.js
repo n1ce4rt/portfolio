@@ -10,8 +10,10 @@ function App() {
   const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
+
     const themeSave = localStorage.getItem('theme');
     setIsDark((themeSave === 'dark'));
+    
   }, [isDark]);
 
   const changeTheme = () => {
